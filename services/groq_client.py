@@ -2,7 +2,7 @@ import os
 import requests
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-MODEL = "llama3-8b-8192"
+MODEL = "mixtral-8x7b-32768"
 
 def ask_groq(prompt: str) -> str | None:
     url = "https://api.groq.com/openai/v1/chat/completions"
